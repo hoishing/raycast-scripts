@@ -6,7 +6,7 @@
 # @raycast.mode silent
 
 # Optional parameters:
-# @raycast.icon img/convert-images.svg
+# @raycast.icon img/rename-files.svg
 # @raycast.argument1 {"type": "text", "placeholder": "prefix"}
 
 
