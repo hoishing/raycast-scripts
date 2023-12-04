@@ -1,18 +1,20 @@
 # Raycast Scripts
 
+> Scripts for automating my daily tasks
+
 ![lang] ![mit]
 
-Scripts for [Raycast], for automation of my daily tasks. Raycast support python, bash and apple scripts.
+[Raycast] support python, bash and apple scripts.
 
 I wrote a [blog post] explain the logic of the webp converting in bash + apple script.
 
 Here are some notable scripts:
 
-| script file                 | description                                                            |
-| --------------------------- | ---------------------------------------------------------------------- |
-| `convert-images.py`         | convert selected images in Finder to target format with quality option |
-| `resize-images.py`          | resize selected images in Finder to target % or px                     |
-| `vscode-here.applescript`   | open current Finder selected folder in VSCode                          |
+| script file               | description                                                            |
+| ------------------------- | ---------------------------------------------------------------------- |
+| `convert-images.py`       | convert selected images in Finder to target format with quality option |
+| `resize-images.py`        | resize selected images in Finder to target % or px                     |
+| `vscode-here.applescript` | open Finder selected folder in VSCode                                  |
 
 ## Prerequisite
 
