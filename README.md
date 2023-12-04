@@ -10,11 +10,12 @@ I wrote a [blog post] explain the logic of the webp converting in bash + apple s
 
 Here are some notable scripts:
 
-| script file               | description                                                            |
-| ------------------------- | ---------------------------------------------------------------------- |
-| `convert-images.py`       | convert selected images in Finder to target format with quality option |
-| `resize-images.py`        | resize selected images in Finder to target % or px                     |
-| `vscode-here.applescript` | open Finder selected folder in VSCode                                  |
+| script file               | description                                                             |
+| ------------------------- | ----------------------------------------------------------------------- |
+| `convert-images.py`       | convert selected images in Finder to target format with quality option  |
+| `resize-images.py`        | resize selected images in Finder to target % or px                      |
+| `vscode-here.applescript` | open Finder selected folder in VSCode                                   |
+| `rename-files`            | batch rename files selected in Finder with specific prefix and numbered |
 
 ## Prerequisite
 

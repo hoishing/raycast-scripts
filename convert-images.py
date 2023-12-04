@@ -14,6 +14,8 @@
 # @raycast.description Convert selected images in Finder to specific format and quality with ImageMagick
 # png compression: higher compression takes longer, smaller file size
 # other image quality: 0-100, higher quality takes longer, larger file size
+# @raycast.author Kelvin Ng
+# @raycast.authorURL https://hoishing.github.io
 
 
 from image_utils import (
