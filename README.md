@@ -4,7 +4,7 @@
 
 Scripts for [Raycast], for automation of my daily tasks. Raycast support python, bash and apple scripts.
 
-I wrote a [blog post] explain the logic of the webp converting in bash script.
+I wrote a [blog post] explain the logic of the webp converting in bash + apple script.
 
 Here are some notable scripts:
 
