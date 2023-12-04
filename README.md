@@ -1,8 +1,8 @@
 # Raycast Scripts
 
-> Scripts for automating my daily tasks
-
 ![lang] ![mit]
+
+> Scripts for automating my daily tasks
 
 [Raycast] support python, bash and apple scripts.
 
