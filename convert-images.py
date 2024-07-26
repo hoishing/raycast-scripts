@@ -19,14 +19,15 @@
 
 
 from image_utils import (
-    exit_if_magick_not_install,
+    exit_if_not_install,
     is_format_supported,
     get_finder_items,
 )
 
 import sys, subprocess
 
-exit_if_magick_not_install()
+# check if imagemagick is installed
+exit_if_not_install("magick")
 
 # get selected files from Finder
 finder_items = get_finder_items()
