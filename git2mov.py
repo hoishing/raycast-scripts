@@ -3,7 +3,7 @@
 # Required parameters:
 # @raycast.schemaVersion 1
 # @raycast.title gif → mov
-# @raycast.mode silent
+# @raycast.mode silient
 
 # Optional parameters:
 # @raycast.icon img/convert-images.svg
@@ -41,10 +41,13 @@ for item in items:
         "ffmpeg",
         "-i",
         item,
+        "-vf",
+        "pad=width=iw:height=ceil(ih/2)*2",  # ensure height is divisible by 2
         "-c:v",
         "libx264",
-        "-pix_fmt",
+        "-pix_fmt",  # for quicktime compatibility
         "yuv420p",
+        "-y",
         str(output_file),
     ]
 
