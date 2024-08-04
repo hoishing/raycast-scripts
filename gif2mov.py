@@ -3,7 +3,7 @@
 # Required parameters:
 # @raycast.schemaVersion 1
 # @raycast.title gif → mov
-# @raycast.mode silient
+# @raycast.mode silent
 
 # Optional parameters:
 # @raycast.icon img/convert-images.svg
