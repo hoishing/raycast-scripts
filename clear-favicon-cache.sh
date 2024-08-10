@@ -22,11 +22,11 @@ osascript -e 'tell application "Safari" to quit'
 # Remove the Favicon Cache folder
 rm -rf ~/Library/Safari/Favicon\ Cache
 
-# Start Safari
-open -a Safari
+# Start Safari and bring it to the front
+osascript -e 'tell application "Safari" to activate'
 
 # Wait for Safari to start (adjust the sleep time if needed)
-sleep 2
+sleep 1
 
 # Go to the recorded URL
 osascript -e "tell application \"Safari\" to open location \"$current_url\""
