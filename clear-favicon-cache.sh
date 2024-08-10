@@ -8,6 +8,11 @@
 # Optional parameters:
 # @raycast.icon 🧹
 
+# Documentation:
+# @raycast.description Remove favicon cache in Safari and return to the previous page
+# @raycast.author Kelvin Ng
+# @raycast.authorURL https://hoishing.github.io
+
 # Get the current URL from Safari
 current_url=$(osascript -e 'tell application "Safari" to get URL of current tab of window 1')
 

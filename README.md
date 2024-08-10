@@ -15,7 +15,8 @@ Here are some notable scripts:
 | `convert-images.py`       | convert selected images in Finder to target format with quality option  |
 | `resize-images.py`        | resize selected images in Finder to target % or px                      |
 | `vscode-here.applescript` | open Finder selected folder in VSCode                                   |
-| `rename-files`            | batch rename files selected in Finder with specific prefix and numbered |
+| `rename-files.py`         | batch rename files selected in Finder with 2 digits suffix              |
+| `clear-favicon-cache.sh`  | remove favicon cache in Safari and return to the previous page          |
 
 ## Prerequisite
 
