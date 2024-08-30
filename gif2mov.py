@@ -17,7 +17,7 @@
 import pathlib
 import subprocess
 import sys
-from image_utils import exit_if_not_install, get_finder_items
+from utils import exit_if_not_install, get_finder_items
 
 # check if ffmpeg is installed
 exit_if_not_install("ffmpeg")

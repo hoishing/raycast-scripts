@@ -1,14 +1,13 @@
 """
-utility functions for image processing
+utility functions for raycast script commands
 """
 
 import subprocess
 import sys
 
 
-# exit if ImageMagick is not installed
 def exit_if_not_install(converter: str) -> None:
-    """converter: "magick" or "ffmpeg" """
+    """exit if ImageMagick or FFMpegis not installed"""
     try:
         subprocess.run([converter, "-version"], capture_output=True, text=True)
     except FileNotFoundError:
@@ -16,16 +15,16 @@ def exit_if_not_install(converter: str) -> None:
         sys.exit(1)
 
 
-# check if a file is supported by ImageMagick
 def is_format_supported(path: str) -> bool:
+    """check if a file is supported by ImageMagick"""
     process = subprocess.run(
         ["magick", "identify", path], capture_output=True, text=True
     )
     return process.returncode == 0
 
 
-# exit if no file selected in Finder
 def get_finder_items() -> list[str]:
+    """get selected files in Finder"""
     items = (
         subprocess.run(
             ["osascript", "get-finder-items.applescript"],
@@ -45,8 +44,8 @@ def get_finder_items() -> list[str]:
     return items
 
 
-# get image width and height, in format of WxH
 def get_image_size(path: str) -> str:
+    """get image width and height, in format of WxH"""
     process = subprocess.run(
         ["magick", "identify", "-format", "%wx%h", path],
         capture_output=True,
@@ -56,3 +55,17 @@ def get_image_size(path: str) -> str:
         print("An error occurred while getting image size")
         sys.exit(1)
     return process.stdout.strip()
+
+
+def get_folder() -> str:
+    """get current folder in Finder"""
+    folder = subprocess.run(
+        ["osascript", "get-folder.applescript"],
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+
+    if not folder:
+        print("No folder selected in Finder")
+        sys.exit(1)
+    return folder

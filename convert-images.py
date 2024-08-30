@@ -18,7 +18,7 @@
 # @raycast.authorURL https://hoishing.github.io
 
 
-from image_utils import (
+from utils import (
     exit_if_not_install,
     is_format_supported,
     get_finder_items,

@@ -18,7 +18,7 @@
 
 import sys
 import subprocess
-from image_utils import (
+from utils import (
     exit_if_magick_not_install,
     is_format_supported,
     get_finder_items,

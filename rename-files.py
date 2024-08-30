@@ -16,7 +16,7 @@
 # @raycast.authorURL https://hoishing.github.io
 
 import sys
-from image_utils import get_finder_items
+from utils import get_finder_items
 from pathlib import Path
 
 new_stem = sys.argv[1]
