@@ -9,7 +9,6 @@
 # @raycast.icon img/resize-images.svg
 # @raycast.argument1 { "type": "text", "placeholder": "% (default 50)", "optional": true }
 # @raycast.argument2 { "type": "text", "placeholder": "px (default 1200)", "optional": true }
-# @raycast.packageName Image Utils
 
 # Documentation:
 # @raycast.description resizes images selected in Finder
