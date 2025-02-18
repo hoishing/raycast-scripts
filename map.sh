@@ -11,4 +11,4 @@
 # Documentation:
 # @raycast.description Open Google Map in specific location and language
 
-open -a Safari "https://www.google.com.tw/maps/@22.6895051,120.3089536,15z?hl=zh-TW&entry=ttu"
+open -a "Google Chrome" "https://www.google.com.tw/maps/@22.6895051,120.3089536,15z?hl=zh-TW&entry=ttu"

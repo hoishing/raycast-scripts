@@ -6,4 +6,4 @@
 # @raycast.icon img/espanso.svg
 # @raycast.description Opens espanso config in the vscode.
 
-code ~/Library/Application\ Support/espanso
+/opt/homebrew/bin/cursor ~/Library/Application\ Support/espanso

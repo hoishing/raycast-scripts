@@ -18,13 +18,13 @@
 import sys
 import subprocess
 from utils import (
-    exit_if_magick_not_install,
+    exit_if_not_install,
     is_format_supported,
     get_finder_items,
     get_image_size,
 )
 
-exit_if_magick_not_install()
+exit_if_not_install("magick")
 
 # get selected files from Finder
 finder_items = get_finder_items()

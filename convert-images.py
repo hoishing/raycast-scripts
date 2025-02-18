@@ -2,29 +2,28 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Convert / Compress Images
+# @raycast.title Convert Images
 # @raycast.mode silent
 
 # Optional parameters:
 # @raycast.icon img/convert-images.svg
 # @raycast.argument1 {"type": "text", "placeholder": "type: png", "optional": true}
-# @raycast.argument2 {"type": "text", "placeholder": "quality/compression: 70", "optional": true}
+# @raycast.argument2 {"type": "text", "placeholder": "quality: 70", "optional": true}
 
 # Documentation:
 # @raycast.description Convert selected images in Finder to specific format and quality with ImageMagick
-# png compression: higher compression takes longer, smaller file size
-# other image quality: 0-100, higher quality takes longer, larger file size
+# image quality: 0-100, higher quality takes longer, larger file size
 # @raycast.author Kelvin Ng
 # @raycast.authorURL https://hoishing.github.io
 
 
+import subprocess
+import sys
 from utils import (
     exit_if_not_install,
-    is_format_supported,
     get_finder_items,
+    is_format_supported,
 )
-
-import sys, subprocess
 
 # check if imagemagick is installed
 exit_if_not_install("magick")
