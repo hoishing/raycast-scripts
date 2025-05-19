@@ -6,4 +6,4 @@
 # @raycast.icon img/palette.svg
 # @raycast.description Opens palette in the vscode.
 
-/usr/local/bin/cursor ~/Documents/settings/color-palette
+/usr/local/bin/code ~/Documents/settings/color-palette

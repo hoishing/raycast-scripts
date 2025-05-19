@@ -13,5 +13,4 @@
 import subprocess
 from utils import get_folder
 
-
-subprocess.run(["/usr/local/bin/cursor", get_folder()])
+subprocess.run(["/opt/homebrew/bin/cursor", get_folder()])

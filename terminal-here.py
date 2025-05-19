@@ -12,5 +12,5 @@
 import subprocess
 from utils import get_folder
 
-
-subprocess.run(["open", "-a", "warp", get_folder()])
+folder = get_folder()
+subprocess.run(["open", "-a", "ghostty", folder])

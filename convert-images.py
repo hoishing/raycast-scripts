@@ -7,8 +7,8 @@
 
 # Optional parameters:
 # @raycast.icon img/convert-images.svg
-# @raycast.argument1 {"type": "text", "placeholder": "type: png", "optional": true}
-# @raycast.argument2 {"type": "text", "placeholder": "quality: 70", "optional": true}
+# @raycast.argument1 {"type": "text", "placeholder": "type: jpg", "optional": true}
+# @raycast.argument2 {"type": "text", "placeholder": "quality: 75", "optional": true}
 
 # Documentation:
 # @raycast.description Convert selected images in Finder to specific format and quality with ImageMagick
@@ -32,7 +32,7 @@ exit_if_not_install("magick")
 finder_items = get_finder_items()
 
 # type of the output image
-img_type = sys.argv[1] if sys.argv[1] != "" else "png"
+img_type = sys.argv[1] if sys.argv[1] != "" else "jpg"
 
 # quality of the output image
 quality = sys.argv[2] if sys.argv[2] != "" else "75"

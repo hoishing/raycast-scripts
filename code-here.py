@@ -13,5 +13,4 @@
 import subprocess
 from utils import get_folder
 
-
 subprocess.run(["/opt/homebrew/bin/code", get_folder()])
